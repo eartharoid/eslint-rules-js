@@ -1,11 +1,9 @@
 {
   "name": "@eartharoid/eslint-rules-js",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "type": "module",
   "author": "eartharoid",
   "license": "MIT",
   "description": "My standard eslint rules"
