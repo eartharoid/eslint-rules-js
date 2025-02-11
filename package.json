@@ -1,10 +1,16 @@
 {
   "name": "@eartharoid/eslint-rules-js",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "type": "module",
   "author": "eartharoid",
   "license": "MIT",
-  "description": "My standard eslint rules"
+  "description": "My standard eslint rules",
+  "dependencies": {
+    "eslint-plugin-unused-imports": "^4.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.1"
+  }
 }

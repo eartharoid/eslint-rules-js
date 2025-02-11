@@ -1,4 +1,7 @@
+import unusedImports from 'eslint-plugin-unused-imports';
+
 export default {
+	plugins: { 'unused-imports': unusedImports },
 	rules: {
 		'array-bracket-newline': [
 			'error',
@@ -128,6 +131,7 @@ export default {
 		'no-unused-expressions': [
 			'error',
 		],
+		'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
 		'no-var': [
 			'error',
 		],
@@ -185,6 +189,16 @@ export default {
 		'spaced-comment': [
 			'error',
 			'always',
+		],
+		'unused-imports/no-unused-imports': 'error',
+		'unused-imports/no-unused-vars': [
+			'warn',
+			{
+				'args': 'after-used',
+				'argsIgnorePattern': '^_',
+				'vars': 'all',
+				'varsIgnorePattern': '^_',
+			},
 		],
 	},
 };
